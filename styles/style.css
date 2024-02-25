@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 
 ul {
@@ -13,24 +14,113 @@ a {
     text-decoration: none;
 }
 
-img {
+/* img {
     width: 100%;
     height: auto;
-}
+} */
 
 main.container {
     display: grid;
     grid-template: 1.1fr 4fr / 1.1fr 4fr;
 }
 
-main .header {
+header.header {
     background-color: red;
     grid-area: 1/2/2/3;
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: grid;
     grid-template: 1fr 1fr / 1.8fr 1fr;
     gap: 1.2rem;
 }
+
+header .search-box {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .search-box > img {
+    height: 24px;
+}
+
+header .search-box > input {
+    height: 28px;
+    border-radius: 1rem;
+    background-color: #ebd7d7;
+    border: none;
+    /* padding-left: 1rem; */
+}
+
+header .profile {
+    background-color: orange;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: end;
+}
+
+header .profile > .icon {
+    height: 24px;
+}
+
+header .profile > .profile-picture {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+header .profile > .profile-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+header .greetings {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+
+header .greetings > img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+header .greetings > div {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+header .greetings > div > .larger-greeting {
+    font-size: 1.5rem;
+}
+
+header .actions {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-flow: column;
+
+    padding: .5rem;
+}
+
+header .actions > * {
+    background-color: olivedrab;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 45px;
+}
+
+
+
+
+
 
 .sidebar {
     background-color: black;
