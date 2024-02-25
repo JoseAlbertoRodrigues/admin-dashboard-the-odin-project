@@ -27,7 +27,6 @@ main.container {
 /* ====================== HEADER ============================ */
 
 header.header {
-    background-color: red;
     grid-area: 1/2/2/3;
     padding: 1rem 2rem;
     display: grid;
@@ -55,7 +54,6 @@ header .search-box > input {
 }
 
 header .profile {
-    background-color: orange;
     display: grid;
     grid-auto-flow: column;
     gap: 1.5rem;
@@ -123,7 +121,7 @@ header .actions > * {
 
 
 main .sidebar {
-    background-color: olivedrab;
+    background-color: rgb(59, 121, 202);
     grid-area: 1 / 1 / 4 / 2;
     display: grid;
     padding: 1rem;
