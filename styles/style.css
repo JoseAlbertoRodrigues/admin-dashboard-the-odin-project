@@ -1,20 +1,44 @@
+/*====  RESET ============================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.layout {
-    width: 100vw;
-    height: 100vh;
-    background-color: orange;
+ul {
+    list-style: none;
 }
 
-div {
-    width: 250px;
-    height: 250px;
-    background-color: orchid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main.container {
+    display: grid;
+    grid-template: 1.1fr 4fr / 1.1fr 4fr;
+}
+
+main .header {
+    background-color: red;
+    grid-area: 1/2/2/3;
+    padding: 1rem;
+    display: grid;
+    grid-template: 1fr 1fr / 1.8fr 1fr;
+    gap: 1.2rem;
+}
+
+.sidebar {
+    background-color: black;
+    grid-area: 1 / 1 / 4 / 2;
+    display: grid;
+}
+
+.content {
+    background-color: orangered;
+    grid-area: 2 / 2 / 4 / 4;
 }
