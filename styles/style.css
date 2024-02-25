@@ -24,6 +24,8 @@ main.container {
     grid-template: 1.1fr 4fr / 1.1fr 4fr;
 }
 
+/* ====================== HEADER ============================ */
+
 header.header {
     background-color: red;
     grid-area: 1/2/2/3;
@@ -117,16 +119,62 @@ header .actions > * {
     height: 45px;
 }
 
+/* ============== SIDEBAR ============================= */
 
 
-
-
-
-.sidebar {
-    background-color: black;
+main .sidebar {
+    background-color: olivedrab;
     grid-area: 1 / 1 / 4 / 2;
     display: grid;
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+    align-content: baseline;
 }
+
+.sidebar .dashboard-head {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar .dashboard-icon {
+    width: 50px;
+}
+
+.sidebar .dashboard-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.sidebar .dashboard-nav,
+.sidebar .dashboard-menu-config {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.sidebar .dashboard-nav > img,
+.sidebar .dashboard-menu-config > img {
+    height: 22px;
+}
+
+.sidebar .dashboard-nav > div,
+.sidebar .dashboard-menu-config > div {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
 
 .content {
     background-color: orangered;
