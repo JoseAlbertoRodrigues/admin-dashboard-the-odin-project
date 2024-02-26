@@ -233,6 +233,31 @@ main .sidebar {
     height: 24px;
 }
 
+/* ====================== announcements =================== */
+.announcements {
+    display: grid;
+    grid-area: 1/2/2/3;
+    grid-template-rows: 1.3rem 1fr;
+    gap: 1rem;
+}
 
+.announcement-content {
+    padding: 1.2rem;
+    background-color: white;
+    color: #7f7f7f;
+    font-size: .8rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px 2px lightgray;
+}
 
+hr {
+    background-color: lightgrey;
+    border: none;
+    height: 2px;
+}
 
+.notice {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
