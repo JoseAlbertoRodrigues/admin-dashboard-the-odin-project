@@ -122,7 +122,7 @@ header .actions > * {
 
 main .sidebar {
     background-color: rgb(59, 121, 202);
-    grid-area: 1 / 1 / 4 / 2;
+    grid-area: 1/1/3/2;
     display: grid;
     padding: 1rem;
     display: grid;
@@ -182,31 +182,31 @@ main .sidebar {
     font-size: 1.3rem;
 }
 
-.content .projects {
+.projects {
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     grid-template-rows: 1.3rem 1fr;
     gap: 1rem;
 }
 
-.content .posts {
+.posts {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
     gap: 1.5rem;
 }
 
-.content .card {
+.card {
     display: grid;
     grid-template-columns: 8px 1fr;
 }
 
-.content .yellowbar {
+.yellowbar {
     background-color: #f0b429;
     grid-column: 1/2;
     border-radius: 8px 0 0 8px;
 }
 
-.content .card-content {
+.card-content {
     background-color: white;
     border-radius: 0 8px 8px 0;
     color: #7f7f7f;
@@ -216,20 +216,20 @@ main .sidebar {
     box-shadow: 2px 3px 4px 2px lightgray;
 }
 
-.content .card-heading {
+.card-heading {
     font-weight: 500;
     font-size: 1.2rem;
     color: black;
 }
 
-.content .card-actions {
+.card-actions {
     display: grid;
     gap: 1rem;
     grid-auto-flow: column;
     justify-content: end;
 }
 
-.content .card-icon {
+.card-icon {
     height: 24px;
 }
 
@@ -260,4 +260,35 @@ hr {
     color: black;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* ====================== trending =================== */
+.trending {
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-rows: 1.3rem 1fr;
+    gap: 1rem;
+    padding-top: 20px;
+}
+  
+.trending-accounts {
+    padding: 1.2rem;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    grid-template-rows: repeat(50px);
+    gap: 1rem;
+    box-shadow: 2px 3px 4px 2px lightgray;
+}
+  
+.trend-account-pic {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+  
+.desc {
+    color: grey;
+    font-size: 0.8;
 }
